@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev -p 3222",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@emotion/cache": "^11.4.0",
