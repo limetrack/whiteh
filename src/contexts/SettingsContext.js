@@ -78,7 +78,7 @@ function SetColor(themeColor) {
     case "purple":
       color = PURPLE;
       break;
-    case "Cyan":
+    case "cyan":
       color = CYAN;
       break;
     case "blue":
@@ -99,11 +99,11 @@ function SetColor(themeColor) {
 const initialState = {
   themeMode: "light",
   themeDirection: "ltr",
-  themeColor: "Cyan",
+  themeColor: "cyan",
   onChangeMode: () => {},
   onChangeDirection: () => {},
   onChangeColor: () => {},
-  setColor: PRIMARY_COLOR[0],
+  setColor: PRIMARY_COLOR[2],
   colorOption: [],
 };
 
