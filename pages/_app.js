@@ -9,7 +9,7 @@ import ThemeConfig from "src/theme";
 // contexts
 import { SettingsProvider } from "src/contexts/SettingsContext";
 // components
-import Settings from "src/components/settings";
+// import Settings from "src/components/settings";
 import RtlLayout from "src/components/RtlLayout";
 import TopProgressBar from "src/components/TopProgressBar";
 import ThemePrimaryColor from "src/components/ThemePrimaryColor";
@@ -30,7 +30,7 @@ export default function MyApp({ Component, pageProps }) {
       <ThemeConfig>
         <ThemePrimaryColor>
           <RtlLayout>
-            <Settings />
+            {/* <Settings /> */}
             <Head>
               <meta
                 name="viewport"

@@ -31,7 +31,7 @@ export default function LandingPage() {
   return (
     <MainLayout>
       <RootStyle
-        title="The starting point for your next project | Minimal-UI"
+        title="WHITEH Crypto Investments"
         id="move_top"
       >
         <LandingHero />
