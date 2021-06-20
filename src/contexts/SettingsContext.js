@@ -8,9 +8,9 @@ import palette from "../theme/palette";
 // ----------------------------------------------------------------------
 
 const PRIMARY_COLOR = [
-  // DEFAULT
+  // GREEN
   {
-    name: "default",
+    name: "green",
     ...palette.light.primary,
   },
   // PURPLE
@@ -25,7 +25,7 @@ const PRIMARY_COLOR = [
   },
   // CYAN
   {
-    name: "Cyan",
+    name: "cyan",
     lighter: "#D1FFFC",
     light: "#76F2FF",
     main: "#1CCAFF",
@@ -67,7 +67,7 @@ const PRIMARY_COLOR = [
 
 function SetColor(themeColor) {
   let color;
-  const DEFAULT = PRIMARY_COLOR[0];
+  const GREEN = PRIMARY_COLOR[0];
   const PURPLE = PRIMARY_COLOR[1];
   const CYAN = PRIMARY_COLOR[2];
   const BLUE = PRIMARY_COLOR[3];
@@ -75,6 +75,9 @@ function SetColor(themeColor) {
   const RED = PRIMARY_COLOR[5];
 
   switch (themeColor) {
+    case "green":
+      color = GREEN;
+      break;
     case "purple":
       color = PURPLE;
       break;
@@ -91,7 +94,7 @@ function SetColor(themeColor) {
       color = RED;
       break;
     default:
-      color = DEFAULT;
+      color = CYAN;
   }
   return color;
 }
@@ -117,7 +120,7 @@ function SettingsProvider({ children }) {
   const [settings, setSettings] = useLocalStorage("settings", {
     themeMode: "light",
     themeDirection: "ltr",
-    themeColor: "default",
+    themeColor: "cyan",
   });
 
   const onChangeMode = (event) => {
