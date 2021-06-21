@@ -49,8 +49,8 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(
     margin: "auto",
     textAlign: "center",
     position: "relative",
-    paddingTop: theme.spacing(15),
-    paddingBottom: theme.spacing(15),
+    // paddingTop: theme.spacing(15),
+    // paddingBottom: theme.spacing(15),
     [theme.breakpoints.up("md")]: {
       margin: "unset",
       textAlign: "left",
@@ -100,7 +100,7 @@ export default function LandingHero() {
           variants={varFadeInUp}
         /> */}
 
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h1" sx={{ color: "common.white" }}>
