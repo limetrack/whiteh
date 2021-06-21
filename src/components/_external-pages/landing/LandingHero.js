@@ -51,6 +51,9 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(
     position: "relative",
     // paddingTop: theme.spacing(15),
     // paddingBottom: theme.spacing(15),
+    [theme.breakpoints.up("xs")]: {
+      marginTop: "120px",
+    },
     [theme.breakpoints.up("md")]: {
       margin: "unset",
       textAlign: "left",
@@ -104,7 +107,6 @@ export default function LandingHero() {
           display: "flex",
           alignItems: "center",
           minHeight: {
-            xs: "-webkit-fill-available",
             md: "100vh",
           },
         }}>
