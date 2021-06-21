@@ -74,7 +74,8 @@ export default function MainNavbar() {
             <Logo />
           </NextLink>
           <Label color="primary" variant="clean" sx={{ ml: 1 }}>
-            WHITEH CRYPTO INVESTMENTS
+            {/* WHITEH CRYPTO INVESTMENTS */}
+            WHITEH
           </Label>
           <Box sx={{ flexGrow: 1 }} />
 

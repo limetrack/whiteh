@@ -101,14 +101,14 @@ export default function LandingHero() {
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h1" sx={{ color: "common.white" }}>
-                Start a <br />
-                new project <br /> with
+                WHITEH <br />
+                Crypto <br />
                 <Typography
                   component="span"
                   variant="h1"
                   sx={{ color: "primary.main" }}
                 >
-                  &nbsp;Minimal
+                  &nbsp;Investments
                 </Typography>
               </Typography>
             </motion.div>
