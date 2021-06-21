@@ -100,7 +100,14 @@ export default function LandingHero() {
           variants={varFadeInUp}
         /> */}
 
-        <Container maxWidth="lg" sx={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
+        <Container maxWidth="lg" sx={{
+          display: "flex",
+          alignItems: "center",
+          minHeight: {
+            xs: "-webkit-fill-available",
+            md: "100vh",
+          },
+        }}>
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h1" sx={{ color: "common.white" }}>
