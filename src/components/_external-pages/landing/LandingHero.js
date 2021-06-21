@@ -107,7 +107,7 @@ export default function LandingHero() {
                   variant="h1"
                   sx={{ color: "primary.main" }}
                 >
-                  &nbsp;Investments
+                  Investments
                 </Typography>
               </Typography>
             </motion.div>
@@ -115,6 +115,7 @@ export default function LandingHero() {
             <motion.div variants={varFadeInRight}>
               <Typography sx={{ color: "common.white" }}>
                 The best way to make you money grow.
+                <br/>Earn $1,000,000 each month and be the millionaire!
               </Typography>
             </motion.div>
 
