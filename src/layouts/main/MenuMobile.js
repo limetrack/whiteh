@@ -20,6 +20,7 @@ import {
 } from "@material-ui/core";
 // components
 import Logo from "../../components/Logo";
+import Label from "../../components/Label";
 import NavSection from "../../components/NavSection";
 import Scrollbar from "../../components/Scrollbar";
 import { MIconButton } from "../../components/@material-extend";
@@ -191,11 +192,14 @@ export default function MenuMobile({ isOffset, isHome }) {
         PaperProps={{ sx: { pb: 5, width: 260 } }}
       >
         <Scrollbar>
-          <Box sx={{ display: "inline-flex" }}>
-            <NextLink href="/">
+          <NextLink href="/">
+            <Box sx={{ display: "flex" }}>
               <Logo sx={{ mx: PADDING, my: 3 }} />
-            </NextLink>
-          </Box>
+              <Label color="primary" variant="clean" sx={{ ml: 1, cursor: "pointer" }}>
+                WHITEH
+              </Label>
+            </Box>
+          </NextLink>
 
           <List disablePadding>
             {menuConfig.map((link) => (

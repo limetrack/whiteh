@@ -101,7 +101,6 @@ export default function LandingHero() {
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h1" sx={{ color: "common.white" }}>
-                WHITEH <br />
                 Crypto <br />
                 <Typography
                   component="span"
@@ -115,9 +114,7 @@ export default function LandingHero() {
 
             <motion.div variants={varFadeInRight}>
               <Typography sx={{ color: "common.white" }}>
-                The starting point for your next project based on
-                easy-to-customize Material-UI © helps you build apps faster and
-                better.
+                The best way to make you money grow.
               </Typography>
             </motion.div>
 

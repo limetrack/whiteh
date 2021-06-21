@@ -71,12 +71,24 @@ export default function MainNavbar() {
           }}
         >
           <NextLink href="/">
-            <Logo />
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Logo />
+
+              <MHidden width="mdDown">
+                <Label color="primary" variant="clean" sx={{ ml: 1, cursor: "pointer" }}>
+                  WHITEH CRYPTO INVESTMENTS
+                </Label>
+              </MHidden>
+
+              <MHidden width="mdUp">
+                <Label color="primary" variant="clean" sx={{ ml: 1, cursor: "pointer" }}>
+                  WHITEH
+                </Label>
+              </MHidden>
+            </Box>
           </NextLink>
-          <Label color="primary" variant="clean" sx={{ ml: 1 }}>
-            {/* WHITEH CRYPTO INVESTMENTS */}
-            WHITEH
-          </Label>
+
+
           <Box sx={{ flexGrow: 1 }} />
 
           <MHidden width="mdDown">
