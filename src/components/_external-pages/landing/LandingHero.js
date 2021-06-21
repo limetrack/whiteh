@@ -30,6 +30,7 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
   // backgroundColor: theme.palette.grey[400],
   backgroundImage: "url('/static/home/bckg.jpg')",
   backgroundSize: "cover",
+  minHeight: "100vh",
   [theme.breakpoints.up("md")]: {
     top: 0,
     left: 0,
@@ -90,7 +91,7 @@ export default function LandingHero() {
         <HeroOverlayStyle
           alt="overlay"
           src="/static/overlay.svg"
-          variants={varFadeIn}
+          // variants={varFadeIn}
         />
 
         {/* <HeroImgStyle
