@@ -27,7 +27,9 @@ import {
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
-  backgroundColor: theme.palette.grey[400],
+  // backgroundColor: theme.palette.grey[400],
+  backgroundImage: "url('/static/home/bckg.jpg')",
+  backgroundSize: "cover",
   [theme.breakpoints.up("md")]: {
     top: 0,
     left: 0,
@@ -91,11 +93,11 @@ export default function LandingHero() {
           variants={varFadeIn}
         />
 
-        <HeroImgStyle
+        {/* <HeroImgStyle
           alt="hero"
           src="/static/home/hero.png"
           variants={varFadeInUp}
-        />
+        /> */}
 
         <Container maxWidth="lg">
           <ContentStyle>
