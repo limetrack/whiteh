@@ -193,7 +193,7 @@ export default function MenuMobile({ isOffset, isHome }) {
       >
         <Scrollbar>
           <NextLink href="/">
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Logo sx={{ mx: PADDING, my: 3 }} />
               <Label color="primary" variant="clean" sx={{ ml: 1, cursor: "pointer" }}>
                 WHITEH
