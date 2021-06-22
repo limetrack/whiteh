@@ -5,7 +5,7 @@ function path(root, sublink) {
 }
 
 const ROOTS_DASHBOARD = "/dashboard";
-const ROOTS_FAQ = "/faq";
+const ROOTS_FAQS = "/faqs";
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +24,6 @@ export const PATH_DASHBOARD = {
   },
 };
 
-export const PATH_FAQ = {
-  root: ROOTS_FAQ,
+export const PATH_FAQS = {
+  root: ROOTS_FAQS,
 };

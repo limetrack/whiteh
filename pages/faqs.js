@@ -5,7 +5,7 @@ import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { Grid, Container, Typography } from '@material-ui/core';
 // components
 import Page from "src/components/Page";
-import { FaqsHero, FaqsCategory, FaqsList, FaqsForm } from "src/components/_external-pages/faq";
+import { FaqsHero, FaqsCategory, FaqsList, FaqsForm } from "src/components/_external-pages/faqs";
 
 // ----------------------------------------------------------------------
 
