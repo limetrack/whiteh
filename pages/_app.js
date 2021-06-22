@@ -53,12 +53,13 @@ export default function MyApp({ Component, pageProps }) {
                 />
               </Head>
               <TopProgressBar />
-              {pageLoading && (
+              <Component {...pageProps} />
+              {/* {pageLoading && (
                 <LoadingScreen {...pageProps} />
               )}
               {!pageLoading && (
                 <Component {...pageProps} />
-              )}
+              )} */}
             </RtlLayout>
           </ThemePrimaryColor>
         </ThemeConfig>
