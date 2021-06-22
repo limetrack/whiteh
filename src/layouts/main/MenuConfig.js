@@ -3,7 +3,7 @@ import homeFill from '@iconify/icons-eva/home-fill';
 import fileFill from '@iconify/icons-eva/file-fill';
 import questionMarkCircleFill from '@iconify/icons-eva/question-mark-circle-fill';
 // routes
-import { PATH_DASHBOARD, PATH_FAQS } from '../../routes/paths';
+import { PATH_DASHBOARD, PATH_FAQS, PATH_ABOUT } from '../../routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -21,6 +21,11 @@ const menuConfig = [
   {
     title: 'FAQs',
     path: PATH_FAQS.root,
+    icon: <Icon icon={questionMarkCircleFill} {...ICON_SIZE} />
+  },
+  {
+    title: 'About',
+    path: PATH_ABOUT.root,
     icon: <Icon icon={questionMarkCircleFill} {...ICON_SIZE} />
   },
   { title: 'Dashboard', path: PATH_DASHBOARD.root, icon: <Icon icon={fileFill} {...ICON_SIZE} /> }
