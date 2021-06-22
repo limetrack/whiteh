@@ -66,8 +66,8 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
         <NextLink href="/">
           <Box sx={{ display: "inline-flex" }}>
             <Logo />
-            <Label color="primary" variant="clean" sx={{ ml: 1 }}>
-              WHITEH PLATFORM
+            <Label color="primary" variant="clean" sx={{ ml: 1, cursor: "pointer" }}>
+              CRYPTO PLATFORM
             </Label>
           </Box>
         </NextLink>
