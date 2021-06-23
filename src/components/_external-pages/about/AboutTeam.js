@@ -140,7 +140,7 @@ export default function AboutTeam() {
         </Typography>
       </MotionInView>
 
-      <Box sx={{ position: 'relative' }}>
+      {/* <Box sx={{ position: 'relative' }}>
         <Slider ref={carouselRef} {...settings}>
           {MEMBERS.map((member) => (
             <MotionInView key={member.name} variants={varFadeIn}>
@@ -162,7 +162,7 @@ export default function AboutTeam() {
         sx={{ mx: 'auto' }}
       >
         View all team members
-      </Button>
+      </Button> */}
     </Container>
   );
 }

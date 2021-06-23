@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
+import NextLink from "next/link";
 import arrowForwardFill from '@iconify/icons-eva/arrow-forward-fill';
 // material
 import { alpha, useTheme, experimentalStyled as styled } from '@material-ui/core/styles';
@@ -95,6 +96,22 @@ function CarouselItem({ item }) {
         <Typography variant="h4" paragraph>
           {title}
         </Typography>
+        <Link
+          to="#"
+          color="inherit"
+          variant="overline"
+          component={NextLink}
+          sx={{
+            opacity: 0.72,
+            alignItems: 'center',
+            display: 'inline-flex',
+            transition: (theme) => theme.transitions.create('opacity'),
+            '&:hover': { opacity: 1 }
+          }}
+        >
+          learn More
+          <Box component={Icon} icon={arrowForwardFill} sx={{ width: 16, height: 16, ml: 1 }} />
+        </Link>
       </CardContent>
     </Paper>
   );
