@@ -40,7 +40,7 @@ export default function LandingPage() {
           <LandingHugePackElements />
           <LandingDarkMode />
           <LandingCleanInterfaces />
-          <LandingAdvertisement />
+          {/* <LandingAdvertisement /> */}
         </ContentStyle>
       </RootStyle>
     </MainLayout>

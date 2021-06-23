@@ -18,7 +18,8 @@ MainLayout.propTypes = {
 
 export default function MainLayout({ children }) {
   const { pathname } = useRouter();
-  const isHome = pathname === "/";
+  // const isHome = pathname === "/";
+  const isHome = false;
 
   return (
     <>
