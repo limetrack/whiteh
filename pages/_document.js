@@ -50,7 +50,7 @@ class MyDocument extends Document {
             name="keywords"
             content="whiteh,crypto,investments,bitcoin,cryptocoin,blockchain"
           />
-          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-capable" content="no">
         </Head>
         <body>
           <Main />
